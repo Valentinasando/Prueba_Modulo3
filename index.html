@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon mariohugo.png">
+    <meta name="description" content="Chat de servicio doggy style">
+    <meta name="keywords" content="31 minutos, Doggy Style, Mario Hugo">
+    <meta name="author" content="Valentina Sandoval">
+    <title>Soporte Doggy Style</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- script awesome font-->
+    <script src="https://kit.fontawesome.com/0ea9dbe145.js" crossorigin="anonymous"></script>
+
+    <!-- link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Barra de Navegacion-->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="me-2" src="assets/img/31 nav.png" alt="" width="40" height="40"
+                    class="d-inline-block  align-text-top">Doggy Chat</a>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Soporte</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Preguntas Frecuentes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Organigrama</a></li>
+                            <li><a class="dropdown-item" href="#">Manuales</a></li>
+                            <li><a class="dropdown-item" href="#">Administrar Perfiles</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Boton para acceso en mi barra -->
+            <button class="navbar-user btn btn-outline-warning me-2 d-none d-md-block" type="submit">
+                <ul class="nav-user mb-0 p-0">
+                    <li class="nav-user dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="fa-solid fa-dog me-2" style="color: #918574;"></i>
+                            Mario Hugo (En linea)
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Tu Progreso</a></li>
+                            <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Seccion de salas chat-->
+
+    <section class="sala">
+
+        <div class="contenedor_sala d-flex justify-content-center">
+
+            <div class="contenedor_usuarios d-inline d-none d-md-block d-sm-none">
+
+                <form class="d-flex m-2 " role="search">
+                    <input class="form-control border border-warning-subtle me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn btn-warning" type="submit"><i class="fa-solid fa-magnifying-glass"
+                            style="color: #000000;"></i></button>
+                </form>
+
+                <div class="usuarios d-flex flex-column">
+
+                    <div class="usuarios_item d-inline-flex">
+                        <img class="usuarios_img" src="assets/img/copi copi.png" alt="">
+                        <div class="usuarios_texto flex-column">
+                            <h5>Copy Copy</h5>
+                            <p class="usuarios_p">Escribiendo...</p>
+                            <p class="usuarios_status">En linea</p>
+                        </div>
+                    </div>
+                    <div id="usuarios__animacion" onclick="cambiarColor()" class="usuarios_item d-inline-flex">
+                        <img class="usuarios_img" src="assets/img/mente.png" alt="">
+                        <div class="usuarios_texto flex-column">
+                            <h5>Mente en Blanco</h5>
+                            <p class="usuarios_p d-none d-lg-block d-md-none">Oye Mario Hugo ¿dónde estoy?</p>
+                            <p class="usuarios_status">ult. vez hoy a las 13:45</p>
+                        </div>
+                    </div>
+                    <div class="usuarios_item d-inline-flex">
+                        <img class="usuarios_img" src="assets/img/adjetivo.png" alt="">
+                        <div class="usuarios_texto flex-column">
+                            <h5>Adjetivo</h5>
+                            <p class="usuarios_p d-none d-lg-block d-md-none">Rompi el sillón jejeje &#128513 ayudaaaa
+                            </p>
+                            <p class="usuarios_status">ult. vez hoy a las 13:25</p>
+                        </div>
+
+                    </div>
+                    <div class="usuarios_item d-inline-flex">
+                        <img class="usuarios_img" src="assets/img/mario hugo.png" alt="">
+                        <div class="usuarios_texto flex-column">
+                            <h5>Mi Chat Secreto</h5>
+                            <p class="usuarios_p d-none d-lg-block d-md-none">Adjuntaste una imagen...
+                            </p>
+                            <p class="usuarios_status">ult. vez hoy a las 13:25</p>
+                        </div>
+
+                    </div>
+                    <div class="usuarios_item d-inline-flex">
+                        <img class="usuarios_img" src="assets/img/patana.png" alt="">
+                        <div class="usuarios_texto flex-column">
+                            <h5>Patana mi amor</h5>
+                            <p class="usuarios_p d-none d-lg-block d-md-none">Pero Patana perdoname...
+                            </p>
+                            <p class="usuarios_status">ult. vez hoy a las 13:25</p>
+                        </div>
+
+                    </div>
+                    <div class="usuarios_item d-inline-flex">
+                        <img class="usuarios_img" src="assets/img/elemento.png" alt="">
+                        <div class="usuarios_texto flex-column">
+                            <h5>Elemento</h5>
+                            <p class="usuarios_p d-none d-lg-block d-md-none"> Oye Mario Hugo invite unas cachorras
+                                &#128111</p>
+                            <p class="usuarios_status">ult. vez hoy a las 12:45</p>
+                        </div>
+                    </div>
+                    <div class="usuarios_item d-inline-flex">
+                        <img class="usuarios_img" src="assets/img/tepo tepo.png" alt="">
+                        <div class="usuarios_texto flex-column">
+                            <h5>Tepo-Tepo</h5>
+                            <p class="usuarios_p d-none d-lg-block d-md-none">Mario Hugo me comieron el dog chow
+                                &#128543</p>
+                            <p class="usuarios_status">ult. vez hoy a las 10:00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contenedor_chat flex-column d-inline-block container-fluid">
+
+<!--Boton de contactos-->
+                <div class="chat_lista">
+                    <div class=" chat_boton d-inline-flex">
+                        <button class=" btn btn-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Ver contactos
+                        </button>
+                    </div>
+                    <div class="contenedor_oculto collapse" id="collapseExample">
+                        <div class="card card-body">
+
+                            <div class="lista_contactos d-flex flex-column">
+
+                                <div class="usuarios_item d-inline-flex">
+                                    <img class="usuarios_img" src="assets/img/copi copi.png" alt="">
+                                    <div class="usuarios_texto flex-column">
+                                        <h5>Copy Copy</h5>
+                                    </div>
+                                </div>
+                                <div class="usuarios_item d-inline-flex">
+                                    <img class="usuarios_img" src="assets/img/mente.png" alt="">
+                                    <div class="usuarios_texto flex-column">
+                                        <h5>Mente en Blanco</h5>
+                                    </div>
+                                </div>
+                                <div class="usuarios_item d-inline-flex">
+                                    <img class="usuarios_img" src="assets/img/adjetivo.png" alt="">
+                                    <div class="usuarios_texto flex-column">
+                                        <h5>Adjetivo</h5>
+                                    </div>
+            
+                                </div>
+                                <div class="usuarios_item d-inline-flex">
+                                    <img class="usuarios_img" src="assets/img/mario hugo.png" alt="">
+                                    <div class="usuarios_texto flex-column">
+                                        <h5>Mi Chat Secreto</h5>
+                                    </div>
+            
+                                </div>
+                                <div class="usuarios_item d-inline-flex">
+                                    <img class="usuarios_img" src="assets/img/patana.png" alt="">
+                                    <div class="usuarios_texto flex-column">
+                                        <h5>Patana mi amor</h5>
+                                    </div>
+            
+                                </div>
+                                <div class="usuarios_item d-inline-flex">
+                                    <img class="usuarios_img" src="assets/img/elemento.png" alt="">
+                                    <div class="usuarios_texto flex-column">
+                                        <h5>Elemento</h5>
+                                    </div>
+                                </div>
+                                <div class="usuarios_item d-inline-flex">
+                                    <img class="usuarios_img" src="assets/img/tepo tepo.png" alt="">
+                                    <div class="usuarios_texto flex-column">
+                                        <h5>Tepo-Tepo</h5>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="chat_item_izquierda d-flex">
+                    <img class="chat_img" src="assets/img/copi copi.png" alt="">
+                    <div class="chat_textos">
+                        <h6 class="chat_nombre pt-1"><b>Copi-Copi</b></h6>
+                        <p class="chat_p">Guau guau guauguau guau...</p>
+                        <p class="chat_status_izquierda">Enviado a las: 13:00</p>
+                    </div>
+                </div>
+
+                <div class="chat_item_derecha d-flex">
+                    <div class="chat_textos ps-2">
+                        <h6 class="chat_nombre_derecha pt-1"><b>Mario-Hugo</b></h6>
+                        <p class="chat_p"> Que? Que estas hablando Copi-Copi</p>
+                        <p class="chat_status">Enviado a las: 13:05</p>
+                    </div>
+                    <img class="chat_img" src="assets/img/mario hugo.png" alt="">
+                </div>
+
+                <div class="chat_item_izquierda d-flex ">
+                    <img class="chat_img" src="assets/img/copi copi.png" alt="">
+                    <div class="chat_textos">
+                        <h6 class="chat_nombre pt-1"><b>Copi-Copi</b></h6>
+                        <p class="chat_p">Guauuu guauuu guauuuu!</p>
+                        <p class="chat_status_izquierda">Enviado a las: 13:10</p>
+                    </div>
+                </div>
+
+                <div class="chat_item_derecha d-flex">
+                    <div class="chat_textos ps-2">
+                        <h6 class="chat_nombre_derecha pt-1"><b>Mario-Hugo</b></h6>
+                        <p class="chat_p">Queeeeeee? Que pasa Copi-Copi</p>
+                        <p class="chat_status">Enviado a las: 13:15</p>
+                    </div>
+                    <img class="chat_img" src="assets/img/mario hugo.png" alt="">
+                </div>
+
+                <div class="chat_item_izquierda d-flex ">
+                    <img class="chat_img" src="assets/img/copi copi.png" alt="">
+                    <div class="chat_textos">
+                        <h6 class="chat_nombre pt-1"><b>Copi-Copi</b></h6>
+                        <p class="chat_p">Guauuu guauuu guauuu guauuuu!</p>
+                        <p class="chat_status_izquierda">Enviado a las: 13:10</p>
+                    </div>
+                </div>
+
+                <div class="chat_item_derecha d-flex">
+                    <div class="chat_textos ps-2">
+                        <h6 class="chat_nombre_derecha pt-1"><b>Mario-Hugo</b></h6>
+                        <p class="chat_p">Queeeeeeee? no te entiendo Copi-Copi</p>
+                        <p class="chat_status"> Enviado a las: 13:15</p>
+                    </div>
+                    <img class="chat_img" src="assets/img/mario hugo.png" alt="">
+                </div>
+
+                <div class="chat_item_izquierda d-flex ">
+                    <img class="chat_img" src="assets/img/copi copi.png" alt="">
+                    <div class="chat_textos">
+                        <h6 class="chat_nombre pt-1"><b>Copi-Copi</b></h6>
+                        <p class="chat_p">Guauuu guauuu guauuuuuuuuuu &#128530 !</p>
+                        <p class="chat_status_izquierda"> Enviado a las: 13:10</p>
+                    </div>
+                </div>
+
+                <div class="chat__form">
+
+                    <form class="d-flex m-2 ">
+                        <input class="form-control border border-warning-subtle me-2" placeholder="Escribe tu mensaje">
+                        <button class="btn btn-warning" type="submit"><i class="fa-solid fa-circle-up"
+                                style="color: #000000;"></i></button>
+                        <div class="btn-group dropup ms-1">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-paperclip" style="color: #000000;"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-image"
+                                            style="color: #000000;"></i> Imagen</a></li>
+
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-video"
+                                            style="color: #000000;"></i> Video</a></li>
+
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file"
+                                            style="color: #000000;"></i> Docs.</a></li>
+
+
+                            </ul>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+     <!-- Pie de página--> 
+     <footer class="footer">
+
+        <div class="contenedor_footer container-fluid">
+
+
+            <p class="footer_p">2024 Desarrollado por Valentina Sandoval para prueba modulo 3, curso front end.</p>
+            
+
+            <a href="http://www.github.com"><i class=" footer_icono fab fa-github fa-2x mb-2 mx-5" style="color: #ffa200;" data-toggle="tooltip" data-placement="top"
+                    title="Github"></i></a>
+
+            <a href="http://www.instagram.com"><i class=" footer_icono fab fa-instagram fa-2x mx-5" style="color: #ffa200;" data-toggle="tooltip" data-placement="top"
+                        title="Instagram"></i></a>
+
+            <a href="http://www.linkedin.com"><i class="fab footer_icono fa-linkedin-in fa-2x mx-5" style="color: #ffa200;" data-toggle="tooltip"
+                    data-placement="top" title="Linkedin"></i></a>
+            </div>
+            >
+    </footer>
+
+    <!-- script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- mi script-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

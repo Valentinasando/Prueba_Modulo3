@@ -1,0 +1,147 @@
+body{
+  background: rgb(245, 184, 18);
+  background: linear-gradient(360deg, rgba(250,214,50,1) 15%, rgb(245, 184, 18) 48%) fixed;
+}
+
+.navbar{
+  background-color: black;
+}
+.nav-user {
+  list-style: none;
+}
+
+.contenedor_sala{
+  width: 80vw;
+  margin:auto ;
+}
+
+.contenedor_usuarios{
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px ;
+  margin: 10px;
+  width: 40%;
+}
+
+.usuarios{
+  background-color: rgb(255, 215, 39);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.usuarios_img{
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  border-radius: 30px;
+
+}
+
+.usuarios_item{
+  border-color: rgb(245, 184, 18);
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: aliceblue;
+}
+
+.usuarios_item_prueba{
+  font-weight: bold;
+}
+
+.usuarios_item_prueba:active{
+  font-weight: normal;
+}
+
+.usuarios_texto{
+  margin: 2px;
+  width: 100%;
+}
+
+.usuarios_p{
+  font-size: medium;
+  margin: 0%;
+}
+
+#usuarios__animacion{
+  font-weight: bold;
+}
+
+#usuarios__animacion.activo{
+  font-weight: normal;
+}
+
+.usuarios_status{
+  font-size: small;
+  justify-content: end;
+  display: flex;
+  margin: 0%;
+}
+
+.contenedor_chat{
+  background: rgb(251,255,171);
+  background: radial-gradient(circle, rgba(251,255,171,1) 14%, rgba(247,255,193,1) 48%)fixed;
+  border-radius: 15px;
+  margin: 10px;
+  width: 40%;
+  display: flex;
+
+}
+
+.chat_item_izquierda{
+  background-color: rgb(255, 222, 114);
+  justify-content: start;
+  border-radius: 30px;
+  margin: 10px;
+  width: 50%;
+
+}
+
+.chat_item_derecha{
+  background-color: rgb(255, 222, 114);
+  border-radius: 30px;
+  justify-content: end;
+  margin: 10px;
+  width:50%;
+  margin-left: auto;
+
+}
+
+.chat_img{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.chat_status{
+  font-size: small;
+  text-align: end;
+}
+
+.chat_textos{
+  font-family: sans-serif;
+}
+
+.chat_nombre_derecha{
+  text-align: end;
+}
+
+.chat_status_izquierda{
+  font-size: small;
+  text-align: start;
+}
+
+.lista_contactos{
+  background-color:rgb(255, 187, 0);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.contenedor_footer{
+  background-color: black;
+  text-align: center;
+}
+
+.footer_p{
+  color: #ffa200 ;
+}
