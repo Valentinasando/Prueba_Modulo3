@@ -1,4 +1,6 @@
 body{
+  margin: 0%;
+  padding: 0%;
   background: rgb(245, 184, 18);
   background: linear-gradient(360deg, rgba(250,214,50,1) 15%, rgb(245, 184, 18) 48%) fixed;
 }
@@ -92,7 +94,9 @@ body{
   justify-content: start;
   border-radius: 30px;
   margin: 10px;
-  width: 50%;
+  width: 60%;
+
+  
 
 }
 
@@ -101,7 +105,7 @@ body{
   border-radius: 30px;
   justify-content: end;
   margin: 10px;
-  width:50%;
+  width:60%;
   margin-left: auto;
 
 }
@@ -120,15 +124,20 @@ body{
 
 .chat_textos{
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .chat_nombre_derecha{
   text-align: end;
+
 }
 
 .chat_status_izquierda{
   font-size: small;
   text-align: start;
+
 }
 
 .lista_contactos{
@@ -137,11 +146,4 @@ body{
   margin: 10px;
 }
 
-.contenedor_footer{
-  background-color: black;
-  text-align: center;
-}
 
-.footer_p{
-  color: #ffa200 ;
-}
